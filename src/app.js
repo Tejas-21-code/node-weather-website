@@ -4,7 +4,6 @@ const forcast = require("./utils/forcast");
 const path = require("path");
 const express = require("express");
 const hbs = require("hbs");
-// const { S_IFBLK } = require("constants");
 
 const app = express();
 const publicPath = path.join(__dirname, "../public");
