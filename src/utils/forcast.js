@@ -8,7 +8,10 @@ const forcast = (lat, long, callback) => {
       callback(response.body.error.info);
     } else {
       const data = response.body.current;
-      const msg = `The temperature is currently ${data.temperature} and their is a ${data.precip}% chance of rain`;
+      const msg = `The current temperature is ${data.temperature} and their is a ${data.precip}% chance of rain
+      The Humidity is ${data.humidity}, But it feels like ${data.feelslike}.
+
+      `;
       callback(undefined, msg);
     }
   });
